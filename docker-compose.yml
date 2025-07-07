@@ -10,12 +10,15 @@ services:
 #    networks:
 #      traefik:
 
-    labels: # new
-      - "traefik.enable=true"
-      - "traefik.http.routers.django.entrypoints=https"
-      - "traefik.http.routers.django.rule=Host(`zadm.kik-soft.ru`)"
-      - "traefik.http.routers.django.tls=true"
-      - "traefik.http.routers.django.tls.certresolver=letsEncrypt"
+#    labels: # new
+#      - "traefik.enable=true"
+#      - "traefik.http.routers.django.entrypoints=https"
+#      - "traefik.http.routers.django.rule=Host(`zadm.kik-soft.ru`)"
+#      - "traefik.http.routers.django.tls=true"
+#      - "traefik.http.routers.django.tls.certresolver=letsEncrypt"
+
+
+
       #- "traefik.http.services.bdjangoot-service.loadbalancer.server.port=80"
 #  zulip_listen:
 #    build:
